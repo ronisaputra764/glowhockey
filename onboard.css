@@ -1,0 +1,156 @@
+.background-login-register {
+    background-image: url(assets/image/Air\ Hockey.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clash-hockey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.clash {
+    margin-top: 1px;
+    background: linear-gradient(180deg, #00FFFF, #17FBF3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        0 0 6000px #0D74C9,
+        0 0 80px #0D74C9;
+}
+
+.hockey {
+    margin-top: -65px;
+    background: linear-gradient(180deg, #FFFFFF, #FF20C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        0 0 6000px #FF008C,
+        0 0 80px #FF008C;
+}
+
+.main {
+    text-align: center;
+}
+
+.text {
+    color: #FF40D1;
+    font-size: 20px;
+}
+
+.rectangle {
+    margin-top: -30px;
+    margin-bottom: -130px;
+}
+
+.rectangle-14 {
+    position: relative;
+    right: -165px;
+    width: 340px;
+}
+
+.rectangle-15 {
+    position: relative;
+    right: 174px;
+    top: -7px;
+    width: 330px;
+}
+
+.guest {
+    background: linear-gradient(180deg, #FFFFFF, #17FBF3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 25px;
+    position: relative;
+    top: -111px;
+}
+
+.register {
+    color: #10F5FF;
+    margin-left: 6px;
+}
+
+.login {
+    text-align: center;
+}
+
+.login p {
+    color: #CE3AAF;
+    font-size: 25px;
+}
+
+.gradient-border {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #00FFFF, #ff00cc);
+}
+
+.gradient-border input {
+    padding: 10px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: black;
+    color: #00FFFF;
+    width: 250px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: #00FFFF;
+    opacity: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.button-login {}
+
+.button-login img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-login a {
+    color: white;
+    position: relative;
+    right: 346px;
+    top: -70px;
+
+    background: linear-gradient(180deg, #FFFFFF, #FF20C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+.rectangle-19 {
+    position: relative;
+    left: 315px;
+    width: 365px;
+    height: 150px;
+}
+
+.rectangle-20 {
+    position: relative;
+    right: 35px;
+    top: -25px;
+    width: 325px;
+}
