@@ -41,6 +41,10 @@
     font-size: 20px;
 }
 
+.text-register {
+    margin-top: 40px;
+}
+
 .rectangle {
     margin-top: -30px;
     margin-bottom: -130px;
@@ -69,6 +73,16 @@
     top: -111px;
 }
 
+.get-started {
+    background: linear-gradient(180deg, #FFFFFF, #17FBF3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 23px;
+    line-height: 25px;
+    position: relative;
+    top: -102px;
+}
+
 .register {
     color: #10F5FF;
     margin-left: 6px;
@@ -78,9 +92,10 @@
     text-align: center;
 }
 
-.login p {
+.login-text {
     color: #CE3AAF;
     font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .gradient-border {
@@ -127,7 +142,7 @@ input::placeholder {
     color: white;
     position: relative;
     right: 346px;
-    top: -70px;
+    top: -66px;
 
     background: linear-gradient(180deg, #FFFFFF, #FF20C9);
     -webkit-background-clip: text;
@@ -141,16 +156,96 @@ input::placeholder {
     z-index: 10;
 }
 
+.button-register a {
+    color: white;
+    position: relative;
+    right: 346px;
+    top: -66px;
+
+    background: linear-gradient(180deg, #FFFFFF, #FF20C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 20px;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
 .rectangle-19 {
     position: relative;
-    left: 315px;
-    width: 365px;
-    height: 150px;
+    left: 311px;
+    width: 360px;
+    height: 140px;
 }
 
 .rectangle-20 {
     position: relative;
     right: 35px;
-    top: -25px;
+    top: -21px;
     width: 325px;
+}
+
+.rectangle-19-register {
+    position: relative;
+    left: 391px;
+    width: 360px;
+    height: 140px;
+}
+
+.rectangle-20-register {
+    position: relative;
+    right: -45px;
+    top: -21px;
+    width: 325px;
+}
+
+.term {
+    color: white;
+    margin-top: -30px;
+    font-size: 15px;
+}
+
+.term a {
+    color: #00FFFF
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.google {
+    background-color: transparent;
+    border: #00FFFF 1px solid;
+    color: #00FFFF;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.apple {
+    background-color: transparent;
+    border: #FF20C9 1px solid;
+    color: #FF20C9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.google img {
+    height: 20px;
+}
+
+.apple img {
+    height: 35px;
 }
