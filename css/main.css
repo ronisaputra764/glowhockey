@@ -1,5 +1,5 @@
 .background-main {
-    background-image: url(assets/image/Air\ Hockey-main.png);
+    background-image: url(../assets/image/Air\ Hockey-main.png);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 }
 
 .rectangle-21 {
-    background-image: url(assets/image/Rectangle\ 21.png);
+    background-image: url(../assets/image/Rectangle\ 21.png);
     height: 100px;
     width: 200px;
     background-size: contain;
@@ -47,7 +47,7 @@
 }
 
 .elipse {
-    background-image: url(assets/image/Ellipse\ 1.png);
+    background-image: url(../assets/image/Ellipse\ 1.png);
     height: 50px;
     margin-top: 10px;
     margin-left: 20px;
@@ -56,7 +56,7 @@
 }
 
 .male {
-    background-image: url(assets/image/male-icon\ 5.png);
+    background-image: url(../assets/image/male-icon\ 5.png);
     height: 32px;
     margin-left: 10px;
     margin-top: 0px;
@@ -90,7 +90,7 @@
 .play-container {}
 
 .rectangle-1 {
-    background-image: url(assets/image/Rectangle\ 1.png);
+    background-image: url(../assets/image/Rectangle\ 1.png);
     width: 170px;
     height: 100px;
     margin-left: auto;
@@ -105,6 +105,7 @@
     font: bold;
     text-align: center;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .cards-container {
@@ -117,7 +118,7 @@
 }
 
 .cards-container div {
-    background-image: url(assets/image/Rectangle\ 24.png);
+    background-image: url(../assets/image/Rectangle\ 24.png);
     height: 250px;
     width: 200px;
     background-size: contain;
@@ -144,7 +145,7 @@
 }
 
 .menu div {
-    background-image: url(assets/image/Rectangle\ 17.png);
+    background-image: url(../assets/image/Rectangle\ 17.png);
     height: 40px;
     width: 200px;
     background-size: contain;
@@ -152,6 +153,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu div p {

@@ -1,5 +1,5 @@
 .challenges-background {
-    background-image: url(assets/image/Air\ Hockey2.png);
+    background-image: url(../assets/image/Air\ Hockey2.png);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 }
 
 .rectangle-21 {
-    background-image: url(assets/image/Rectangle\ 21.png);
+    background-image: url(../assets/image/Rectangle\ 21.png);
     height: 100px;
     width: 200px;
     background-size: contain;
@@ -47,7 +47,7 @@
 }
 
 .elipse {
-    background-image: url(assets/image/Ellipse\ 1.png);
+    background-image: url(../assets/image/Ellipse\ 1.png);
     height: 50px;
     margin-top: 10px;
     margin-left: 20px;
@@ -56,7 +56,7 @@
 }
 
 .male {
-    background-image: url(assets/image/male-icon\ 5.png);
+    background-image: url(../assets/image/male-icon\ 5.png);
     height: 32px;
     margin-left: 10px;
     margin-top: 0px;
@@ -102,7 +102,7 @@
     background: #002947;
     border-radius: 20px;
     z-index: 10;
-    width: 220px;
+    width: 150px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -125,9 +125,10 @@
 }
 
 .rectangle-28 img {
-    width: 220px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -3px;
 }
 
 .rounded-rectangle {
@@ -136,11 +137,11 @@
     background: #002947a1;
     border-radius: 12px;
     z-index: 1;
-    width: 400px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 23px;
 }
 
 .rounded-rectangle::before {
@@ -158,63 +159,120 @@
     z-index: -1;
 }
 
-.rounded-rectangle div {
+.rounded-rectangle p {
+    color: white;
+}
+
+.top {
     display: flex;
-    align-items: center;
-    height: 40px;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.rounded-rectangle div img {
-    width: 20px;
-    height: 20px;
+.top img {
+    width: 110px;
+    height: 110px;
 }
 
-.rounded-rectangle div p {
-    font-size: 20px;
-    margin-left: 5px;
+.mid {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.list {}
-
-.claimed {
-    color: #43FCFF;
-}
-
-.blur {
-    color: #43fcff7f;
-}
-
-.button-claim-all {
+.gradient-border {
     position: relative;
-    padding: 1rem;
-    background: #002947;
-    border-radius: 20px;
-    z-index: 10;
-    width: 120px;
-    height: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: -27px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.button-claim-all::before {
+.gradient-border input {
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    color: white;
+}
+
+.gradient-border textarea {
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    height: 100px;
+    color: white;
+}
+
+.gradient-border::before {
     content: "";
     position: absolute;
     inset: 0;
     padding: 2px;
     border-radius: inherit;
-    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    background: linear-gradient(to right, #43FCFF, #FF09AF);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    z-index: 10;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.button-claim-all img {
-    width: 120px;
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-button {
+    position: relative;
+    display: inline-block;
+    padding: 1px 30px;
+    font-size: 16px;
+    background: #002947;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gradient-button img {
+    width: 80px;
+    margin-top: 6px;
+}
+
+.gradient-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    /* Ketebalan border */
+    border-radius: inherit;
+    background: linear-gradient(to right, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.gradient-button:focus {
+    outline: none;
 }
