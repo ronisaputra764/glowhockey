@@ -1,0 +1,342 @@
+.challenges-background {
+    background-image: url(../assets/image/Air\ Hockey2.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clash-hockey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+
+.clash {
+    margin-top: 1px;
+    color: #17FBF3;
+    text-shadow:
+        0 0 1000px #0D74C9,
+        0 0 80px #0D74C9;
+}
+
+.hockey {
+    margin-top: -65px;
+    color: #FF20C9;
+    text-shadow:
+        0 0 1000px #FF008C,
+        0 0 80px #FF008C;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: -10;
+}
+
+.rectangle-21 {
+    background-image: url(../assets/image/Rectangle\ 21.png);
+    height: 100px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.elipse {
+    background-image: url(../assets/image/Ellipse\ 1.png);
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.male {
+    background-image: url(../assets/image/male-icon\ 5.png);
+    height: 32px;
+    margin-left: 10px;
+    margin-top: 0px;
+    position: relative;
+    top: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.point {
+    color: white;
+    position: absolute;
+    top: 3px;
+    right: 70px;
+}
+
+.point span {
+    display: flex;
+    align-items: center;
+}
+
+.point span img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.player-top {
+    margin-top: -10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main img {
+    width: 400px;
+}
+
+.rectangle-28 {
+    position: relative;
+    padding: 1rem;
+    background: #002947;
+    border-radius: 20px;
+    z-index: 10;
+    width: 160px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-28 p {
+    color: white;
+    font-size: 27px;
+}
+
+.rectangle-28 img {
+    width: 25px;
+    margin-right: 7px;
+}
+
+.rectangle-28::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+}
+
+.rounded-rectangle {
+    position: relative;
+    background: #002947a1;
+    border-radius: 12px;
+    z-index: 1;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 58px;
+    padding-bottom: 10px;
+    top: -50px;
+}
+
+.rounded-rectangle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.rectangle-26 {
+    position: relative;
+    padding: 10px 40px;
+    background: #002947;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 28px;
+}
+
+.rectangle-26 .top {
+    position: relative;
+    top: 20px;
+}
+
+.rectangle-26 img {
+    width: 80px;
+    height: 80px;
+}
+
+.rectangle-26 p {
+    position: relative;
+    top: -15px;
+}
+
+.top p {
+    font-size: 20px;
+}
+
+.rectangle-26::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 5;
+}
+
+.button-price {
+    position: relative;
+    padding: 10px 30px;
+    background: #002947;
+    border-radius: 10px;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+}
+
+.button-price::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mid-button {
+    display: flex;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rectangle-30 {
+    position: relative;
+    padding: 1rem;
+    background: #002947;
+    border-radius: 10px;
+    z-index: 10;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-30 p {
+    font-size: 20px;
+    color: white;
+    width: 170px;
+    text-align: center;
+}
+
+.rectangle-30::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+}
+
+.buy-via {
+    position: relative;
+    padding: 1rem;
+    background: #002947;
+    border-radius: 50px;
+    z-index: 10;
+    height: 3px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #0BE5E7;
+    margin-top: 20px;
+}
+
+.buy-via::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+}
+
+.payments {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    width: 750px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.payments img {
+    height: 40px;
+}
