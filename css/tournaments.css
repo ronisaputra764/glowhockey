@@ -280,6 +280,8 @@
 
 .carousel-container {
     overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .carousel-track {
