@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.slider {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+    display: flex;
+    width: calc(300px * 4);
+    /* total width = card width * jumlah card */
+    animation: slide 12s infinite linear;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-300px);
+    }
+
+    50% {
+        transform: translateX(-300px);
+    }
+
+    55% {
+        transform: translateX(-600px);
+    }
+
+    75% {
+        transform: translateX(-600px);
+    }
+
+    80% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(-900px);
+    }
+}

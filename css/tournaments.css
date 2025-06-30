@@ -102,17 +102,19 @@
     background: #002947;
     border-radius: 20px;
     z-index: 10;
-    width: 200px;
+    width: 300px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
-    bottom: -27px;
+    bottom: 15px;
 }
 
 .rectangle-28 p {
     color: white;
     position: absolute;
-    top: -31px;
+    top: -42px;
+    left: 25px;
+    font-size: 25px;
 }
 
 .rectangle-28::before {
@@ -132,13 +134,15 @@
 
 .rounded-rectangle {
     position: relative;
-    padding: 1rem;
     background: #002947a1;
     border-radius: 12px;
+    top: -40px;
     z-index: 1;
+    padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 950px;
+    width: 1050px;
+    padding-bottom: 40px;
 }
 
 .rounded-rectangle::before {
@@ -188,6 +192,7 @@
     width: 40%;
     height: 5px;
     padding-top: 35px;
+    top: 0;
 }
 
 .rectangle-26::before {
@@ -241,14 +246,12 @@
     background: #002947;
     border-radius: 10px;
     z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-between;
-    width: 60px;
-    height: 4px;
-    top: 300px;
-    right: 320px;
+    width: 100px;
+    height: 10px;
+    bottom: 80px;
+    right: 458px;
 }
 
 .enter-button::before {
@@ -270,28 +273,71 @@
 .enter-button img {
     width: 120px;
     position: absolute;
-    top: -20px;
-    left: -14px;
+    top: -17px;
+    left: 5px;
 }
 
-.game-container p {
-    color: white;
-    position: absolute;
-    bottom: 57px;
+
+.carousel-container {
+    overflow: hidden;
 }
 
-.left-button {
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 40px 0;
+    padding-top: 70px;
+}
+
+.card {
+    flex: 0 0 33.33%;
+    margin: 0 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.card.active {
+    transform: scale(1.4);
+    opacity: 1;
+    z-index: 1;
+}
+
+.nav-button {
     position: absolute;
-    width: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-button:hover {
+    opacity: 50%;
+}
+
+.nav-left {
     left: -90px;
-    top: 200px;
-    cursor: pointer;
 }
 
-.right-button {
-    position: absolute;
-    width: 60px;
+.nav-right {
     right: -90px;
-    top: 200px;
-    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 80%;
+    }
+
+    .nav-left,
+    .nav-right {
+        left: 10px;
+        right: 10px;
+    }
 }

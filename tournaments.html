@@ -43,47 +43,90 @@
                 <p class="orbitron-700">TOURNAMENTS</p>
             </div>
             <div class="rounded-rectangle poppins-regular">
-                <div>
-                    <div class="rectangle-26">
-                        <img class="line-1" src="assets/image/Line 1.png" alt="">
-                        <img class="line-2" src="assets/image/Line 1.png" alt="">
-                        <div>
-                            <p style="color: #0DFFFF; white-space: nowrap;">ENTRY FEE</p>
-                            <div class="rectangle-26-item">
-                                <img class="coin-img" src="assets/image/dollar-coin-solid-icon (1) 4.png" alt="">
-                                <p>200</p>
-                            </div>
+
+                <div class="rectangle-26">
+                    <img class="line-1" src="assets/image/Line 1.png" alt="">
+                    <img class="line-2" src="assets/image/Line 1.png" alt="">
+                    <div>
+                        <p style="color: #0DFFFF; white-space: nowrap;">ENTRY FEE</p>
+                        <div class="rectangle-26-item">
+                            <img class="coin-img" src="assets/image/dollar-coin-solid-icon (1) 4.png" alt="">
+                            <p>200</p>
                         </div>
-                        <div>
-                            <p style="color: #9F86D8;">PRIZE</p>
-                            <div class="rectangle-26-item">
-                                <img class="coin-img" src="assets/image/dollar-coin-solid-icon (1) 4.png" alt="">
-                                <p>200</p>
-                            </div>
+                    </div>
+                    <div>
+                        <p style="color: #9F86D8;">PRIZE</p>
+                        <div class="rectangle-26-item">
+                            <img class="coin-img" src="assets/image/dollar-coin-solid-icon (1) 4.png" alt="">
+                            <p>200</p>
                         </div>
-                        <div>
-                            <p style="color: #FF09B0;">PARTICIPANTS</p>
-                            <div class="rectangle-26-item">
-                                <img class="coin-img" src="assets/image/couple-icon 1.png" alt="">
-                                <p>200</p>
-                            </div>
+                    </div>
+                    <div>
+                        <p style="color: #FF09B0;">PARTICIPANTS</p>
+                        <div class="rectangle-26-item">
+                            <img class="coin-img" src="assets/image/couple-icon 1.png" alt="">
+                            <p>200</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="game-container">
-                    <img class="left-button" src="assets/image/angle-circle-right-icon 2.png" alt="">
-                    <img class="right-button" src="assets/image/angle-circle-right-icon 1.png" alt="">
-                    <p class="poppins-medium">STARTS IN 5:34</p>
-                    <div class="enter-button">
-                        <img src="assets/image/ENTER.png" alt="">
+
+                    <img class="nav-button nav-left" style="position: absolute; width: 70px;"
+                        src="assets/image/angle-circle-right-icon 2.png"></img>
+
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="card"><img src="assets/image/Air Hockey-tornaments.png" alt="Card 1" /></div>
+                            <div class="card"><img src="assets/image/Air Hockey-tornaments.png" alt="Card 1" /></div>
+                            <div class="card"><img src="assets/image/Air Hockey-tornaments.png" alt="Card 1" /></div>
+                            <div class="card"><img src="assets/image/Air Hockey-tornaments.png" alt="Card 1" /></div>
+                        </div>
                     </div>
-                    <img class="left" src="assets/image/Air Hockey left.png" alt="">
-                    <img class="mid" src="assets/image/Air Hockey-tornaments.png" alt="">
-                    <img class="right" src="assets/image/Air Hockey left.png" alt="">
+
+                    <img class="nav-button nav-right" style="position: absolute; width: 70px;"
+                        src="assets/image/angle-circle-right-icon 1.png"></img>
+                </div>
+                <div>
+                    <p style="color: white; text-align: center; padding-bottom: 80px;">STARTS IN 5:34
+                    </p>
+                    <div style="color: #FF20C9;" class="enter-button orbitron-700"><img src="assets/image/ENTER.png"
+                            alt=""></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.card');
+        const prevBtn = document.querySelector('.nav-left');
+        const nextBtn = document.querySelector('.nav-right');
+
+        let currentIndex = 2; // start from center
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
+
+            cards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateCarousel();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+        updateCarousel();
+    </script>
 </body>
 
 </html>
