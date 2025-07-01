@@ -44,7 +44,74 @@
             </div>
             <div class="rounded-rectangle poppins-regular">
                 <div class="card-container">
-                    <div class="rectangle-26">
+                    <div class="carousel-wrapper">
+                        <img class="nav-button nav-left" style="position: absolute; width: 70px;"
+                            src="assets/image/angle-circle-right-icon 2.png"></img>
+
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/money-icon 1.png" alt="">
+                                            <p>5 coins</p>
+                                        </div>
+                                        <div class="button-price">5.00$</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/money-bag-icon 1.png" alt="">
+                                            <p>10 coins</p>
+                                        </div>
+                                        <div class="button-price">10.00$</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/finance-icon 1.png" alt="">
+                                            <p>20 coins</p>
+                                        </div>
+                                        <div class="button-price">20.00$</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/finance-icon 1.png" alt="">
+                                            <p>20 coins</p>
+                                        </div>
+                                        <div class="button-price">20.00$</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/finance-icon 1.png" alt="">
+                                            <p>20 coins</p>
+                                        </div>
+                                        <div class="button-price">20.00$</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="rectangle-26">
+                                        <div class="top">
+                                            <img src="assets/image/finance-icon 1.png" alt="">
+                                            <p>20 coins</p>
+                                        </div>
+                                        <div class="button-price">20.00$</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="nav-button nav-right" style="position: absolute; width: 70px;"
+                            src="assets/image/angle-circle-right-icon 1.png"></img>
+                    </div>
+
+                    <!-- <div class="rectangle-26">
                         <div class="top">
                             <img src="assets/image/money-icon 1.png" alt="">
                             <p>5 coins</p>
@@ -64,7 +131,7 @@
                             <p>20 coins</p>
                         </div>
                         <div class="button-price">20.00$</div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="mid-button">
                     <div class="rectangle-30">
@@ -86,6 +153,37 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.card');
+        const prevBtn = document.querySelector('.nav-left');
+        const nextBtn = document.querySelector('.nav-right');
+
+        let currentIndex = 2; // start from center
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
+
+            cards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateCarousel();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+        updateCarousel();
+    </script>
 </body>
 
 </html>

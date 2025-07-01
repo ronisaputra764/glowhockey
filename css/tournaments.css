@@ -142,7 +142,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1050px;
-    padding-bottom: 40px;
+    padding-bottom: 130px;
 }
 
 .rounded-rectangle::before {
@@ -157,13 +157,13 @@
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    z-index: -1;
+    z-index: -10;
 }
 
 .game-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 
 .left {
@@ -179,27 +179,25 @@
 }
 
 .rectangle-26 {
-    position: relative;
-    padding: 1rem;
+    position: absolute;
     background: #002947;
-    border-radius: 20px;
+    border-radius: 10px;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    bottom: -27px;
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    height: 5px;
-    padding-top: 35px;
-    top: 0;
+    width: 280px;
+    height: 40px;
+    left: 35px;
+    bottom: -30px;
 }
 
 .rectangle-26::before {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 2px;
+    padding: 1px;
     border-radius: inherit;
     background: linear-gradient(90deg, #43FCFF, #FF09AF);
     -webkit-mask:
@@ -210,48 +208,64 @@
     z-index: 10;
 }
 
-.rectangle-26-item {
+.entry-fee {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    color: white;
-    font-size: 20px;
-}
-
-.rectangle-26 div {
-    margin-top: -45px;
-}
-
-.coin-img {
-    width: 20px;
-}
-
-.line-1 {
+    flex-direction: column;
     position: absolute;
-    left: 135px;
-    top: 1px;
-    height: 53px;
+    top: -9px;
+    left: 10px;
 }
 
-.line-2 {
+.prize {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    left: 265px;
-    top: 1px;
-    height: 53px;
+    top: -9px;
+    left: 110px;
+}
+
+.participants {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -9px;
+    left: 190px;
 }
 
 .enter-button {
     position: absolute;
-    padding: 1rem;
     background: #002947;
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    height: 10px;
-    bottom: 80px;
-    right: 458px;
+    width: 80px;
+    height: 30px;
+    right: 40px;
+    top: 130px;
+    z-index: 50;
+}
+
+.participants p {
+    color: #FF09B0;
+    font-size: 12px;
+}
+
+.prize p {
+    color: #9F86D8;
+    font-size: 12px;
+}
+
+.entry-fee p {
+    color: #0DFFFF;
+    font-size: 12px;
+}
+
+.start-time {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    white-space: nowrap;
+    bottom: -165px;
+    left: 130px;
 }
 
 .enter-button::before {
@@ -270,11 +284,12 @@
     cursor: pointer;
 }
 
-.enter-button img {
-    width: 120px;
+.enter-button p {
+    color: #FF008C;
     position: absolute;
-    top: -17px;
-    left: 5px;
+    top: -40px;
+    left: 12px;
+    font-size: 12px;
 }
 
 

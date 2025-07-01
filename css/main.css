@@ -97,7 +97,8 @@
     margin-right: auto;
     background-size: contain;
     background-repeat: no-repeat;
-    border: transparent 1px solid;
+    position: relative;
+    bottom: 60px;
 }
 
 .rectangle-1 p {
@@ -106,6 +107,8 @@
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    position: relative;
+    top: 25px;
 }
 
 .cards-container {
@@ -114,13 +117,20 @@
     align-items: center;
     gap: 50px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    position: relative;
+    bottom: 50px;
+}
+
+.name {
+    position: relative;
+    bottom: 20px;
 }
 
 .cards-container div {
     background-image: url(../assets/image/Rectangle\ 24.png);
-    height: 250px;
-    width: 200px;
+    height: 350px;
+    width: 250px;
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -131,23 +141,26 @@
 }
 
 .cards-container div img {
-    width: 100px;
+    width: 140px;
+    position: relative;
+    bottom: 20px;
 }
 
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 420px;
+    width: 620px;
     gap: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
+    position: relative;
+    bottom: 50px;
 }
 
 .menu div {
     background-image: url(../assets/image/Rectangle\ 17.png);
-    height: 40px;
-    width: 200px;
+    height: 60px;
+    width: 300px;
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -158,10 +171,11 @@
 
 .menu div p {
     color: white;
+    font-size: 25px;
 }
 
 .menu div img {
-    width: 22px;
-    margin-left: 10px;
+    width: 35px;
+    margin-left: 15px;
     margin-right: 10px;
 }

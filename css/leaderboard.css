@@ -102,11 +102,11 @@
     background: #002947;
     border-radius: 20px;
     z-index: 10;
-    width: 200px;
+    width: 300px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
-    bottom: -27px;
+    bottom: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,11 +114,11 @@
 
 .rectangle-28 p {
     color: white;
-    font-size: 23px;
+    font-size: 35px;
 }
 
 .rectangle-28 img {
-    width: 20px;
+    width: 30px;
     margin-right: 5px;
 }
 
@@ -143,14 +143,17 @@
     background: #002947a1;
     border-radius: 12px;
     z-index: 1;
-    width: 550px;
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 65px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    top: -30px;
 }
 
 .rounded-rectangle::before {
@@ -174,8 +177,8 @@
     background: #002947;
     border-radius: 20px;
     z-index: 10;
-    width: 450px;
-    height: 20px;
+    width: 750px;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     bottom: -27px;
@@ -201,9 +204,9 @@
 }
 
 .item1 {
-    flex: 1 1 50px;
+    flex: 1 1 15px;
     color: #FBF448;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .item2 {
@@ -211,18 +214,20 @@
     border-right: 1px solid #ccc;
     display: flex;
     align-items: center;
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     color: white;
     padding-left: 10px;
+    font-size: 25px;
 }
 
 .item2 img {
-    width: 30px;
-    margin-right: 5px;
+    width: 45px;
+    margin-right: 15px;
 }
 
 .item3 {
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     color: #50F2FD;
-    padding-left: 20px;
+    padding-left: 40px;
+    font-size: 25px;
 }

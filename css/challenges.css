@@ -94,6 +94,8 @@
 
 .main img {
     width: 400px;
+    position: relative;
+    top: -40px;
 }
 
 .rectangle-28 {
@@ -102,7 +104,7 @@
     background: #002947;
     border-radius: 20px;
     z-index: 10;
-    width: 220px;
+    width: 270px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -125,7 +127,7 @@
 }
 
 .rectangle-28 img {
-    width: 220px;
+    width: 270px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -136,11 +138,14 @@
     background: #002947a1;
     border-radius: 12px;
     z-index: 1;
-    width: 400px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .rounded-rectangle::before {
@@ -163,17 +168,17 @@
     align-items: center;
     height: 40px;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .rounded-rectangle div img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .rounded-rectangle div p {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 5px;
 }
 
@@ -197,7 +202,7 @@
     height: 20px;
     margin-left: auto;
     margin-right: auto;
-    bottom: -27px;
+    bottom: 15px;
 }
 
 .button-claim-all::before {
