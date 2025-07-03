@@ -274,3 +274,54 @@
     mask-composite: exclude;
     z-index: 10;
 }
+
+.rectangle-3 {
+    position: relative;
+    padding: 1rem;
+    background: #002947;
+    border-radius: 10px;
+    z-index: 10;
+    width: 15px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -248px;
+    left: 252px;
+    font-size: 30px;
+}
+
+.rectangle-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(160deg, #43FCFF, #FF09AF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+}
+
+.opponent-score {
+    color: red;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+}
+
+.your-score {
+    color: #43FCFF;
+    position: absolute;
+    right: 6px;
+    bottom: -40px;
+}
+
+.line-score {
+    width: 50px;
+    right: -2px;
+    top: 51px;
+    position: absolute;
+}
